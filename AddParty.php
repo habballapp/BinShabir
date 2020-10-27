@@ -3,8 +3,8 @@ session_start();
 if (!isset($_SESSION['user_id'])) {
     header('location: index.php');
 }
-
-include_once('conn.php');
+#comment by RBK
+include_once 'conn.php';
 ?>
 
 <!DOCTYPE html>
@@ -35,14 +35,10 @@ include_once('conn.php');
 
 <body>
     <!-- Top Bar Start -->
-    <?php
-    include_once('header.php');
-    ?>
+    <?php include_once 'header.php'; ?>
     <div class="page-wrapper">
         <!-- Left Sidenav -->
-        <?php
-            include_once('sidebar.php');
-        ?>
+        <?php include_once 'sidebar.php'; ?>
 
         <!-- Page Content-->
         <div class="page-content">
