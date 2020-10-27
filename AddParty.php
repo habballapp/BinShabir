@@ -4,6 +4,7 @@ if (!isset($_SESSION['user_id'])) {
     header('location: index.php');
 }
 #comment by RBK
+
 include_once 'conn.php';
 ?>
 
